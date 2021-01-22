@@ -1,0 +1,2 @@
+rootProject.name = "Grooming App"
+include ':app'
