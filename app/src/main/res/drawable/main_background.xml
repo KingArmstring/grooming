@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="StateListReachable">
+    <item android:drawable="@drawable/plain_fuchsia_background" />
+    <item android:drawable="@drawable/background_repeat" android:state_pressed="false" />
+</layer-list>
