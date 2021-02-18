@@ -2,3 +2,4 @@
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/cut"
     android:tileMode="repeat" />
+<!--This is a background made of small icon of scissor and repeated to fill the whole view-->

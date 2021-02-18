@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
     android:background="@color/fuchsia">
+<!--The main root layout is the ConstraintLayout-->
+
+<!--    I am using the lib ParticleView which allows me to this nice animation splashScreen-->
+<!--    We just need to set the different values of the fields and we have a nice professional animation-->
+<!--    Like the time of animation, texts colors, ...etc-->
 
     <me.wangyuwei.particleview.ParticleView
         android:id="@+id/pv_id"

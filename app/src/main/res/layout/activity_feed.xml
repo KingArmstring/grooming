@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".FeedActivity">
 
+<!--    RecyclerView which is the new more efficient way of creating lists in Android-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_posts"
         android:layout_width="match_parent"
@@ -16,3 +17,4 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+<!--The root layout is Constraint layout-->

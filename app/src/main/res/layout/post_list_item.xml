@@ -10,13 +10,16 @@
     android:layout_marginEnd="20dp"
     android:backgroundTint="@color/fuchsia">
 
+<!--    This is the layout of single list item, it's root is a CardView which gives very nice looking items-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:paddingBottom="15dp">
 
-
+<!--ImageView which is the main view in Android to show an image-->
+<!--        the image value is in the `src` attr-->
         <ImageView
             android:id="@+id/post_image"
             android:layout_width="match_parent"
@@ -28,6 +31,7 @@
             android:src="@drawable/ic_doggy"
             />
 
+<!--        TextView is the main view in Android to show text-->
         <TextView
             android:id="@+id/post_text"
             android:layout_width="match_parent"
@@ -40,6 +44,8 @@
             android:layout_marginEnd="20dp"
             />
 
+
+<!--        This linear layout acts like a container for the link, dislike, and save buttons of each post-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,6 +57,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             >
+
+<!--            and ImageButton is just a Button with src attr, which allows us to add a nice image to the button instead of text-->
             <ImageButton
                 android:id="@+id/btn_like"
                 android:layout_width="0dp"
