@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="@drawable/main_background">
+    android:background="@drawable/plain_fuchsia_background">
 
 <!--    ImageView which is the main view to be used when we need to have an image-->
     <ImageView
@@ -17,6 +17,15 @@
         app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/ic_doggy"
         android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/pupy"/>
 
 <!--    Just a button with onClick property with it's value the name of the callback method which should be executed when this button is clicked by the user -->
 <!--Also the button has some other properties like background which uses the search_button_background-->
@@ -32,6 +41,6 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/search_button_drawable"
         android:onClick="btnGroomYourDoggy"
-        android:text="Groom your doggy"/>
+        android:text="Grooming Salon"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
