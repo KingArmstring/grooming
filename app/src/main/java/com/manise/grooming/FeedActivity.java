@@ -49,13 +49,9 @@ public class FeedActivity extends AppCompatActivity {
      * Dummy data to test the list
      */
     private void fillList() {
-        posts.add(new Post("This is placeholder text for the post content", R.drawable.ic_doggy));
-        posts.add(new Post("This is placeholder text for the post content", R.drawable.ic_doggy));
-        posts.add(new Post("This is placeholder text for the post content", R.drawable.ic_doggy));
-        posts.add(new Post("This is placeholder text for the post content", R.drawable.ic_doggy));
-        posts.add(new Post("This is placeholder text for the post content", R.drawable.ic_doggy));
-        posts.add(new Post("This is placeholder text for the post content", R.drawable.ic_doggy));
-        posts.add(new Post("This is placeholder text for the post content", R.drawable.ic_doggy));
+        posts.add(new Post("This is placeholder text for the post content", R.drawable.gd1));
+        posts.add(new Post("This is placeholder text for the post content", R.drawable.gd2));
+        posts.add(new Post("This is placeholder text for the post content", R.drawable.gd3));
     }
 
 }

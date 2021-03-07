@@ -18,29 +18,44 @@
         android:src="@drawable/ic_doggy"
         android:layout_marginTop="20dp"/>
 
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_logo"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/pupy"/>
-
-<!--    Just a button with onClick property with it's value the name of the callback method which should be executed when this button is clicked by the user -->
-<!--Also the button has some other properties like background which uses the search_button_background-->
+    <!--    Just a button with onClick property with it's value the name of the callback method which should be executed when this button is clicked by the user -->
+    <!--Also the button has some other properties like background which uses the search_button_background-->
     <Button
         android:id="@+id/btn_handle_search_click"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/search_button_drawable"
         android:onClick="btnGroomYourDoggy"
-        android:text="Grooming Salon"/>
+        android:padding="40dp"
+        android:text="START"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/main_text"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:padding="10dp"/>
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

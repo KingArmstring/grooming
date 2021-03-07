@@ -4,19 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="14dp"
-    android:layout_marginTop="15dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:backgroundTint="@color/fuchsia">
+    android:backgroundTint="@color/post_background">
 
 <!--    This is the layout of single list item, it's root is a CardView which gives very nice looking items-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:paddingBottom="15dp">
+        android:layout_marginTop="20dp">
 
 <!--ImageView which is the main view in Android to show an image-->
 <!--        the image value is in the `src` attr-->
@@ -28,7 +23,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="15dp"
-            android:src="@drawable/ic_doggy"
             />
 
 <!--        TextView is the main view in Android to show text-->
@@ -38,25 +32,46 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/post_image"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="@string/lorem_ipsum"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             />
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_text"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/space_grey"
+                android:hint="Add your comment..."
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                />
+        </androidx.cardview.widget.CardView>
 
 <!--        This linear layout acts like a container for the link, dislike, and save buttons of each post-->
         <LinearLayout
+            android:id="@+id/lds_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/post_text"
+            app:layout_constraintTop_toBottomOf="@id/et_comment"
             android:gravity="start"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            >
+            android:orientation="horizontal">
 
 <!--            and ImageButton is just a Button with src attr, which allows us to add a nice image to the button instead of text-->
             <ImageButton
@@ -87,6 +102,19 @@
                 />
 
         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/black" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
